@@ -4,42 +4,21 @@
 #include<stdlib.h>
 #include<dos.h>
 #include<graphics.h>
-
 #include<string.h>
-
 #include<fstream.h>
-
 #include<process.h>
-
 #include<time.h>
 
-
-
 #define ESC 27
-
 #define UP 72
-
 #define LEFT 75
-
 #define RIGHT 77
-
 #define DOWN 80
-
 #define SPACE 32
-
 #define ENTER 13
 
-
-
-
-
-struct date d;	//Strructure For Getting The System Date
-
+struct date d;	//Structure For Retrieving System Date
 		//For Determining The Date The Book Should Be Returned.
-
-
-
-
 
 /***********************************************************************************
 
@@ -47,69 +26,30 @@ struct date d;	//Strructure For Getting The System Date
 
 ************************************************************************************/
 
-
-
 	class AdminOptions
-
 	{
-
 		public:
-
-
-
+		
 		int BookCode,BookCopies;
-
-
-
 		char BookName[20],AuthorName[20],BookType[10];
 
-
-
 		int AddBook();		//Add A Book To Binary File.
-
 		int DeleteBook();       //Delete A Book From Binary File.
-
 		void DisplaySelBook();  //Search And Display A Selected Book.
-
 		void DisplayBooks();    //Display All Books.
 
-
-
-
-
 		int MemCode,MemYears;
-
-
-
 		char MemName[20],MemSName[20],MemGender[10];
-
-
-
 		int AddMem();		//Add A Member To Binary File.
-
 		int DeleteMem();        //Delete A Member From Binary File.
-
+		
 		void DisplaySelMem();   //Search And Display A Selected Member.
-
 		void DisplayMem();      //Display All Members.
 
-
-
-
-
 		void GetBookData()  //Get Book Details From The Administrator
-
 		{                   //To Store In The Binary File.
-
-
-
 		clrscr();
-
-
-
 		textcolor(LIGHTBLUE);
-
-
 
 		cprintf(" |----------------------------------------------------------------------------| ");
 
@@ -117,99 +57,50 @@ struct date d;	//Strructure For Getting The System Date
 
 		cprintf(" |----------------------------------------------------------------------------| ");
 
-
-
 		textcolor(WHITE);
-
-
 
 			gotoxy(15,6);
 
 			cout<<"Enter The Book Code: ";
-
 			cin>>BookCode;
-
-
-
+			
 			gotoxy(15,7);
 
 			cout<<"Enter The Name Of The Book: ";
-
 			gets(BookName);
-
-
-
+			
 			gotoxy(15,8);
 
 			cout<<"Enter The Author Name: ";
-
 			gets(AuthorName);
-
-
 
 			gotoxy(15,9);
 
 			cout<<"Enter The Book Type (Fiction, Non-Fiction etc...) : ";
-
 			gets(BookType);
-
-
 
 			gotoxy(15,10);
 
 			cout<<"Enter The Number Of Copies: ";
-
 			cin>>BookCopies;
-
 		}
-
-
 
 		void PutBookData()	//Displays The Book Details.
-
 		{
-
-
-
 			cout.width(9);	cout<<BookCode;
-
-
-
 			cout.width(15); cout<<BookName;
-
-
-
 			cout.width(15); cout<<AuthorName;
-
-
-
 			cout.width(16); cout<<BookType;
-
-
-
 			cout.width(14); cout<<BookCopies;
-
-
-
+			
 			cout<<"\n";
-
 		}
 
-
-
 		void GetMemData()	//Get Member Details From The Administrator
-
 		{	   		//To Store In The Binary File.
-
-
-
+			
 		clrscr();
-
-
-
 		textcolor(LIGHTCYAN);
-
-
 
 		cprintf(" |----------------------------------------------------------------------------| ");
 
@@ -217,55 +108,33 @@ struct date d;	//Strructure For Getting The System Date
 
 		cprintf(" |----------------------------------------------------------------------------| ");
 
-
-
 		textcolor(WHITE);
-
-
-
-
 
 			gotoxy(15,6);
 
 			cout<<"Enter The Member Code: ";
-
 			cin>>MemCode;
-
-
 
 			gotoxy(15,7);
 
 			cout<<"Enter The First Name Of The Member: ";
-
 			gets(MemName);
-
-
 
 			gotoxy(15,8);
 
 			cout<<"Enter The Surname Of The Member: ";
-
 			gets(MemSName);
-
-
 
 			gotoxy(15,9);
 
 			cout<<"Enter The Gender(M/F): ";
-
 			gets(MemGender);
-
-
-
+			
 			gotoxy(15,10);
 
 			cout<<"Enter The Number Of Years Of Membership: ";
-
 			cin>>MemYears;
-
 		}
-
-
 
 		void PutMemData()
 
