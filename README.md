@@ -30,4 +30,4 @@ The backend code is structured using classes, structures and data is stored in b
   > Member Details
   <img src="https://github.com/nagarajarchak/Librarian/blob/master/accdetails.png" height="40%" width="40%">
   
-*This DBMS was developed as part of CBSE Grade 12 CS final project work.* :grin:
+*I found the code for this project while retreiving files from my old computer. This DBMS was developed as part of CBSE Grade 12 CS final project work.* :grin:
