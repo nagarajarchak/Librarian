@@ -15,6 +15,7 @@ The backend code is structured using classes, structures and data is stored in b
 
 ### Here are a few screenshots of the system:
 
+<p float="left">
 > Landing Page
 <img src="https://github.com/nagarajarchak/Librarian/blob/master/landingpage.JPG" height="35%" width="35%">
 
@@ -29,5 +30,5 @@ The backend code is structured using classes, structures and data is stored in b
 
 > Member Details
 <img src="https://github.com/nagarajarchak/Librarian/blob/master/accdetails.png" height="35%" width="35%">
-
+</p>
 *This DBMS was developed as part of CBSE Grade 12 CS final project work.* :grin:
